@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Raízes da Caatinga | Reflorestamento e Água para o Semiárido</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Library para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 
+<header id="main-header">
+    <div class="container nav-bar">
+        <div class="logo">Raízes<span>daCaatinga</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#projeto">Projeto</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+            <li><a href="#doar">Doar</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="800">
+            <h1>Floresta de esperança para o sertão</h1>
+            <p>Suas doações reflorestam a Caatinga e levam água potável para famílias em situação de seca extrema. Cada gota e cada muda transformam vidas.</p>
+            <button class="btn-doar" id="heroDoarBtn"><i class="fas fa-seedling" style="margin-right: 10px;"></i> Doe agora</button>
+        </div>
+    </section>
+
+    <!-- Seção Explicativa -->
+    <section id="projeto" class="section">
+        <div class="container">
+            <div data-aos="fade-right">
+                <h2 class="section-title">A Caatinga pede socorro</h2>
+                <p class="section-sub">O único bioma exclusivamente brasileiro enfrenta desertificação, perda de biodiversidade e ciclos de seca cada vez mais severos. Nossa missão é regenerar e garantir água.</p>
+            </div>
+            <div class="grid-2cols">
+                <div class="text-block" data-aos="fade-right" data-aos-delay="150">
+                    <p>Com mais de 30 milhões de brasileiros vivendo no semiárido, a escassez hídrica ameaça agricultura familiar e a sobrevivência de espécies endêmicas. Atuamos com técnicas de barragens subterrâneas, cisternas e plantio de espécies nativas resistentes à seca, como umbuzeiro, juazeiro e cactos.</p>
+                    <p><strong>Nosso projeto une ciência e comunidades locais:</strong> já recuperamos nascentes, implantamos sistemas de captação de água da chuva e criamos viveiros comunitários para mudas nativas. Cada doação fortalece o ciclo de vida do sertão.</p>
+                </div>
+                <div class="img-block" data-aos="fade-left" data-aos-delay="200">
+                    <img src="https://images.pexels.com/photos/5052804/arid-northeast-brazil-caatinga-vegetation.jpg?auto=compress&cs=tinysrgb&w=800" alt="Vegetação da Caatinga e solo seco">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cards de Impacto -->
+    <section id="impacto" class="section">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h2 class="section-title">Seu apoio em ação</h2>
+                <p class="section-sub">Cada contribuição direta gera resultados mensuráveis que transformam o semiárido. Veja alguns dos impactos:</p>
+            </div>
+            <div class="cards-grid">
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="card-icon"><i class="fas fa-tree"></i></div>
+                    <h3>Reflorestamento</h3>
+                    <p>Plantio de mudas nativas em áreas degradadas, recuperando a resiliência da Caatinga e sequestrando carbono.</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="card-icon"><i class="fas fa-tint"></i></div>
+                    <h3>Água para Famílias</h3>
+                    <p>Cisternas e sistemas de dessalinização: acesso a água limpa para beber, cozinhar e irrigar pequenas hortas.</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="card-icon"><i class="fas fa-paw"></i></div>
+                    <h3>Preservação da fauna</h3>
+                    <p>Proteção de animais ameaçados como o tatu-bola, o mico-leão-do-nordeste e aves típicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas animadas -->
+    <div class="container">
+        <div class="stats-section" data-aos="flip-up">
+            <div class="stats-wrapper">
+                <div class="stat-item">
+                    <h2><span id="treesCount">0</span>+</h2>
+                    <p>Árvores plantadas</p>
+                </div>
+                <div class="stat-item">
+                    <h2><span id="familiesCount">0</span></h2>
+                    <p>Famílias com acesso à água</p>
+                </div>
+                <div class="stat-item">
+                    <h2><span id="hectaresCount">0</span>ha</h2>
+                    <p>Hectares em regeneração</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário de Doação moderno -->
+    <section id="doar" class="section">
+        <div class="container">
+            <div data-aos="fade-up">
+                <h2 class="section-title">Faça parte dessa transformação</h2>
+                <p class="section-sub">Sua doação, qualquer valor, financia novas mudas, cisternas e capacitação de agricultores locais. Escolha o valor e ajude a escrever um futuro mais verde.</p>
+            </div>
+            <div class="form-donate" data-aos="fade-up" data-aos-delay="100">
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Nome completo</label>
+                        <input type="text" id="nome" placeholder="Ana Maria da Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> E-mail</label>
+                        <input type="email" id="email" placeholder="contato@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-hand-holding-heart"></i> Valor da doação (R$)</label>
+                        <input type="number" id="valor" placeholder="50, 100, 250..." step="1" min="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-leaf"></i> Destino da contribuição</label>
+                        <select id="destino">
+                            <option value="reflorestamento">Reflorestamento (+ árvores)</option>
+                            <option value="agua">Água para famílias (cisternas)</option>
+                            <option value="ambos">Ambos (onde mais precisar)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="fas fa-seedling"></i> Doar agora</button>
+                </form>
+                <p id="formFeedback" style="margin-top: 20px; font-size: 0.9rem; text-align: center; color: #2e6b42;"></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p><i class="fas fa-heart" style="color:#E8A735;"></i> Raízes da Caatinga — Unidos pela regeneração e pela água no semiárido brasileiro.</p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">© 2025 | Projeto de impacto socioambiental | #SertãoVivo</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
